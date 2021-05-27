@@ -51,7 +51,7 @@ def sendgridmail(user,TEXT):
 
 
 
-    sg = sendgrid.SendGridAPIClient('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')
+    sg = sendgrid.SendGridAPIClient('api_key')
     from_email = Email("customercare.vmware@gmail.com")  # Change to your verified sender
     to_email = To(user)  # Change to your recipient
     subject = "VM ware"
@@ -101,7 +101,7 @@ def worker_reg(user):
 
 
 
-    sg = sendgrid.SendGridAPIClient('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')
+    sg = sendgrid.SendGridAPIClient('api_key')
     from_email = Email("customercare.vmware@gmail.com")  # Change to your verified sender
     to_email = To(user)  # Change to your recipient
     subject = "VM ware worker selected"
@@ -188,7 +188,7 @@ td {
 
 
 
-    sg = sendgrid.SendGridAPIClient('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')
+    sg = sendgrid.SendGridAPIClient('api_key')
     from_email = Email("customercare.vmware@gmail.com")  # Change to your verified sender
     to_email = To(user)  # Change to your recipient
     subject = "COMPLAINT BOOKED SUCCESSFULLY"
@@ -293,7 +293,7 @@ td {
 
 
 
-    sg = sendgrid.SendGridAPIClient('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')
+    sg = sendgrid.SendGridAPIClient('api_key')
     from_email = Email("customercare.vmware@gmail.com")  # Change to your verified sender
     to_email = To(user)  # Change to your recipient
     subject = "COMLAINT RECEIVED"
