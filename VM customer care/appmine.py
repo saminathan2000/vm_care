@@ -26,7 +26,7 @@ app.config['MAIL_SERVER'] = 'smtp.sendgrid.net'
 app.config['MAIL_PORT'] = 587
 app.config['MAIL_USE_TLS'] = True
 app.config['MAIL_USERNAME'] = 'apikey'
-app.config['MAIL_PASSWORD'] = os.environ.get('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')
+app.config['MAIL_PASSWORD'] = os.environ.get('api_key')
 app.config['MAIL_DEFAULT_SENDER'] = os.environ.get('saminathanhappy@gmail.com')
 app.config.from_pyfile('sendgridcon.env')
 mail = Mail(app)
